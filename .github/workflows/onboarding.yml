@@ -12,8 +12,8 @@ jobs:
       
       - uses: actions/github-script@v6
         with:
-        github-token: ${{ github.token }}
-          script:
+      
+          script: |
             
              let fs = require('fs')             
              var directories = fs.readdirSync('issues/');
