@@ -5,6 +5,10 @@ file_version: 1.1.3
 app_version: 1.18.34
 ---
 
+## Set up workflow
+
+<br/>
+
 This code snippet sets up an onboarding workflow for a new team member. It uses the `on` keyword with the `workflow_dispatch` event to trigger the workflow manually. The workflow is designed to provide a way to onboard new team members, but the specific functionality is not provided in the code snippet.
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 .github/workflows/onboarding.yml
@@ -14,6 +18,10 @@ This code snippet sets up an onboarding workflow for a new team member. It uses 
 3        workflow_dispatch:
 4        
 ```
+
+<br/>
+
+## Create job
 
 <br/>
 
