@@ -43,7 +43,8 @@ Next, it uses the `actions/github-script` action with version 6. This action all
 12           
 13           - uses: actions/github-script@v6
 14             with:
-15               script: |
+15             github-token: ${{ github.token }}
+16               script: |
 ```
 
 <br/>
