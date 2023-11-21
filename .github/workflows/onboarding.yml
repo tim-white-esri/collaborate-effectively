@@ -12,6 +12,7 @@ jobs:
       
       - uses: actions/github-script@v6
         with:
+        github-token: ${{ github.token }}
           script: |
             
              let fs = require('fs')             
