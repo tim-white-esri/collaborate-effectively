@@ -2,8 +2,21 @@
 id: vpy68t9h
 title: Onboarding Action
 file_version: 1.1.3
-app_version: 1.18.34
+app_version: 1.18.38
 ---
+
+This code snippet sets up a GitHub Actions workflow that triggers when an issue is assigned or when a pull request is opened or reopened.
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 .github/workflows/issue-management.yml
+```yaml
+3      on:
+4        issues:
+5          types: [assigned]
+6        pull_request:
+7          types: [opened, reopened]
+```
+
+<br/>
 
 ## Set up workflow
 
@@ -51,7 +64,7 @@ Next, it uses the `actions/github-script` action with version 6. This action all
 12           
 13           - uses: actions/github-script@v6
 14             with:
-15             github-token: ${{ github.token }}
+15           
 16               script: |
 ```
 
