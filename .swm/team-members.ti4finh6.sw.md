@@ -2,7 +2,7 @@
 id: ti4finh6
 title: Team Members
 file_version: 1.1.3
-app_version: 1.18.34
+app_version: 1.18.38
 ---
 
 The Team Members file contains all active developers on the project, aiming for improvement.
@@ -20,6 +20,22 @@ Add new developers to the team member list. Be sure to remove any inactive devel
 5      - jessehouwing
 6      - tim-white-esri
 7      - testing
+```
+
+<br/>
+
+This code snippet retrieves a token for a GitHub workflow application. It uses the `peter-murray/workflow-application-token-action` action, providing the application ID and private key as inputs.
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 .github/workflows/issue-management.yml
+```yaml
+29         steps:    
+30           - name: Get Token
+31             id: get_workflow_token
+32             uses: peter-murray/workflow-application-token-action@8e1ba3bf1619726336414f1014e37f17fbadf1db
+33             with:
+34               application_id: ${{ vars.GH_APPLICATION_ID }}
+35               application_private_key: ${{ secrets.GH_APPLICATION_PRIVATE_KEY }}
+36               
 ```
 
 <br/>
