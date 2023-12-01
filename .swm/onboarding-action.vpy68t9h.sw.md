@@ -22,6 +22,21 @@ This code snippet sets up a GitHub Actions workflow that triggers when an issue 
 
 <br/>
 
+This code snippet creates a new issue on GitHub using the GitHub REST API. It takes in parameters such as the owner and repository name, the title and body of the issue, assignees, and labels.
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 .github/workflows/onboarding.yml
+```yaml
+69                       github.rest.issues.create({
+70                             owner,
+71                             repo,
+72                             title,
+73                             body,
+74                             assignees,
+75                             labels
+```
+
+<br/>
+
 This code snippet sets up an onboarding workflow for a new team member. It uses the `on` keyword with the `workflow_dispatch` event to trigger the workflow manually. The workflow is designed to provide a way to onboard new team members, but the specific functionality is not provided in the code snippet.
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 .github/workflows/onboarding.yml
