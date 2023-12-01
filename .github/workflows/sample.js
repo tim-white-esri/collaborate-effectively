@@ -5,5 +5,8 @@ function iterate() {
     }
 }
 
+// add console log "hello world"
+console.log("hello world");
+
 // Call the function
 iterate();
