@@ -2,7 +2,7 @@
 id: cki6ud6z
 title: Untitled doc
 file_version: 1.1.3
-app_version: 1.18.37
+app_version: 1.18.45
 ---
 
 This code snippet creates a JavaScript function called `iterate` that uses a `for` loop to iterate from 1 to 10 and logs each number to the console. It then calls the `iterate` function to execute the loop and display the numbers 1 to 10. Robert really likes this.
@@ -16,8 +16,23 @@ This code snippet creates a JavaScript function called `iterate` that uses a `fo
 5          }
 6      }
 7      
-8      // Call the function
-9      iterate();
+8      // add console log "hello world"
+9      console.log("hello world");
+10     
+11     // Call the function
+12     iterate();
+```
+
+<br/>
+
+Generate some info about the snippet.
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 .github/workflows/sample.js
+```javascript
+2      function iterate() {
+3          for (let i = 1; i <= 10; i++) {
+4              console.log(i);
+5          }
 ```
 
 <br/>
